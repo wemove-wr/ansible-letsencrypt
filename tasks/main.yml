@@ -25,8 +25,8 @@
     include: ubuntu.yml
     when: ansible_distribution == "Ubuntu" and
           (ansible_distribution_release == "trusty" or
-          ansible_distribution_release == "xenial") or
-          ansible_distribution_release == "artful") or
+          ansible_distribution_release == "xenial" or
+          ansible_distribution_release == "artful" or
           ansible_distribution_release == "bionic")
 
   - name: install certbot (using pip)
