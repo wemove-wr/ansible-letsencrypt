@@ -11,6 +11,8 @@ galaxy_info:
       versions:
         - trusty
         - xenial
+        - artful
+        - bionic
     - name: Debian
       versions:
         - jessie
