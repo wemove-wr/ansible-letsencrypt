@@ -27,7 +27,8 @@
           (ansible_distribution_release == "trusty" or
           ansible_distribution_release == "xenial" or
           ansible_distribution_release == "artful" or
-          ansible_distribution_release == "bionic")
+          ansible_distribution_release == "bionic" or
+          ansible_distribution_release == "focal")
 
   - name: install certbot (using pip)
     include: install-with-pip.yml
@@ -37,6 +38,7 @@
       - ansible_distribution != "Ubuntu" and ansible_distribution_release != "xenial"
       - ansible_distribution != "Ubuntu" and ansible_distribution_release != "artful"
       - ansible_distribution != "Ubuntu" and ansible_distribution_release != "bionic"
+      - ansible_distribution != "Ubuntu" and ansible_distribution_release != "focal"
 
   - name: Ensure webroot exists
     file:

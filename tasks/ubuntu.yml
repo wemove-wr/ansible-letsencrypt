@@ -7,6 +7,8 @@
   apt_repository:
     repo: "ppa:certbot/certbot"
   become: yes
+  when:
+    - ansible_distribution_release != "focal"
 
 - name: install certbot ubuntu
   apt: pkg={{item}} state=latest

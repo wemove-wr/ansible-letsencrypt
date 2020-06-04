@@ -9,6 +9,8 @@ the web server has been configured or even installed.
 - Debian Jessie
 - Debian Stretch
 - Ubuntu Xenial
+- Ubuntu Bionic
+- Ubuntu Focal
 
 On other platforms this role will try to install letsencrypt using pip, which is not officially supported and may break over upgrades at least.
 
