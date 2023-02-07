@@ -9,6 +9,7 @@
   become: yes
   when:
     - ansible_distribution_release != "focal"
+    - ansible_distribution_release != "jammy"
 
 - name: install certbot ubuntu
   apt: pkg={{item}} state=latest
