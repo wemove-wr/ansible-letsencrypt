@@ -6,6 +6,7 @@ it will use the standalone authenticator. This is handy for generating certs on 
 the web server has been configured or even installed.
 
 # Supported platforms
+- Debian Jammy
 - Debian Jessie
 - Debian Stretch
 - Ubuntu Xenial
